@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from agendaapp.views import index
+from agendaapp.views import index,cad_servico
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index,name='index'),
+    path('cad_servico/', cad_servico,name='cad_servico'),
 ]
